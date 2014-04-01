@@ -26,9 +26,40 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (float) xToDeg:(float) x
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    float result = x - 1;
+    result *= -1;
+    result *= 90;
+    return result;
 }
+
+- (void) testInitialsFromFullname {
+    NSString *firstNickName = @"EB";
+    NSString *expectedResult = @"EB";
+   
+    XCTAssertEqual(firstNickName, expectedResult, @"Not the same");
+}
+
+- (void) testToDeg {
+    float firstNickName = [self xToDeg:0.222];
+    float expectedResult = 70.02;
+    
+    XCTAssertEqual(firstNickName, expectedResult, @"Not the same");
+
+     firstNickName = [self xToDeg:0];
+     expectedResult = 90;
+    
+    XCTAssertEqual(firstNickName, expectedResult, @"Not the same");
+
+    
+    firstNickName = [self xToDeg:1];
+    expectedResult = 0;
+    
+    XCTAssertEqual(firstNickName, expectedResult, @"Not the same");
+
+}
+
+
 
 @end
