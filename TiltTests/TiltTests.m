@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "TiltCalc.h"
 
 @interface TiltTests : XCTestCase
 
@@ -26,40 +27,30 @@
     [super tearDown];
 }
 
-- (float) xToDeg:(float) x
-{
-    float result = x - 1;
-    result *= -1;
-    result *= 90;
-    return result;
-}
-
-- (void) testInitialsFromFullname {
-    NSString *firstNickName = @"EB";
-    NSString *expectedResult = @"EB";
+- (void) testDemoOfStringCompair {
+    NSString *string1 = @"EB";
+    NSString *string2 = @"EB";
    
-    XCTAssertEqual(firstNickName, expectedResult, @"Not the same");
+    XCTAssertEqual(string1, string2, @"The strings are not the same");
 }
 
 - (void) testToDeg {
-    float firstNickName = [self xToDeg:0.222];
+    id calc = [[TiltCalc alloc] init];
+    
+    float calcResult = [calc calcDeg:0.222];
     float expectedResult = 70.02;
     
-    XCTAssertEqual(firstNickName, expectedResult, @"Not the same");
+    XCTAssertEqual(calcResult, expectedResult, @"Not the same");
 
-     firstNickName = [self xToDeg:0];
-     expectedResult = 90;
+    calcResult = [calc calcDeg:0];
+    expectedResult = 90;
     
-    XCTAssertEqual(firstNickName, expectedResult, @"Not the same");
-
+    XCTAssertEqual(calcResult, expectedResult, @"Not the same");
     
-    firstNickName = [self xToDeg:1];
+    calcResult = [calc calcDeg:1];
     expectedResult = 0;
     
-    XCTAssertEqual(firstNickName, expectedResult, @"Not the same");
-
+    XCTAssertEqual(calcResult, expectedResult, @"Not the same");
 }
-
-
 
 @end

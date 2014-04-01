@@ -7,6 +7,7 @@
 //
 
 #import "TiltViewController.h"
+#import "TiltCalc.h"
 
 @interface TiltViewController ()
 
@@ -45,16 +46,12 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (float) xToDeg:(float) x
-{
-    float result = x - 1;
-    result *= -1;
-    result *= 90;
-    return result;
-}
-
 - (IBAction)Update:(id)sender {
-    float deg = [self xToDeg:0.222];
+    
+    id calc = [[TiltCalc alloc] init];
+    
+    float deg = [calc calcDeg:0.123];
+
     self.assert.text = [@(deg) stringValue];
 }
 

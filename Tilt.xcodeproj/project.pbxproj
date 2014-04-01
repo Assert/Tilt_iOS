@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D558BDE918EB4CE300A53291 /* TiltCalc.m in Sources */ = {isa = PBXBuildFile; fileRef = D558BDE818EB4CE300A53291 /* TiltCalc.m */; };
+		D558BDEA18EB4CE400A53291 /* TiltCalc.m in Sources */ = {isa = PBXBuildFile; fileRef = D558BDE818EB4CE300A53291 /* TiltCalc.m */; };
 		D5B50E2818EAE3D400C7A314 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B50E2718EAE3D400C7A314 /* Foundation.framework */; };
 		D5B50E2A18EAE3D400C7A314 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B50E2918EAE3D400C7A314 /* CoreGraphics.framework */; };
 		D5B50E2C18EAE3D400C7A314 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B50E2B18EAE3D400C7A314 /* UIKit.framework */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D558BDE718EB4CE300A53291 /* TiltCalc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiltCalc.h; sourceTree = "<group>"; };
+		D558BDE818EB4CE300A53291 /* TiltCalc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiltCalc.m; sourceTree = "<group>"; };
 		D5B50E2418EAE3D400C7A314 /* Tilt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tilt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B50E2718EAE3D400C7A314 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D5B50E2918EAE3D400C7A314 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -119,6 +123,8 @@
 				D5B50E3D18EAE3D400C7A314 /* TiltViewController.m */,
 				D5B50E3F18EAE3D400C7A314 /* Images.xcassets */,
 				D5B50E2E18EAE3D400C7A314 /* Supporting Files */,
+				D558BDE718EB4CE300A53291 /* TiltCalc.h */,
+				D558BDE818EB4CE300A53291 /* TiltCalc.m */,
 			);
 			path = Tilt;
 			sourceTree = "<group>";
@@ -251,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5B50E3418EAE3D400C7A314 /* main.m in Sources */,
+				D558BDE918EB4CE300A53291 /* TiltCalc.m in Sources */,
 				D5B50E3E18EAE3D400C7A314 /* TiltViewController.m in Sources */,
 				D5B50E3818EAE3D400C7A314 /* TiltAppDelegate.m in Sources */,
 			);
@@ -261,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5B50E5318EAE3D400C7A314 /* TiltTests.m in Sources */,
+				D558BDEA18EB4CE400A53291 /* TiltCalc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +465,7 @@
 				D5B50E5818EAE3D400C7A314 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5B50E5918EAE3D400C7A314 /* Build configuration list for PBXNativeTarget "TiltTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +474,7 @@
 				D5B50E5B18EAE3D400C7A314 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TiltTests/TiltTests.m"
-            timestampString = "418073014.179258"
+            timestampString = "418080738.481193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "-testInitialsFromFullname"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "-testDemoOfStringCompair"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TiltTests/TiltTests.m"
-            timestampString = "418073014.179258"
+            timestampString = "418080738.481193"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "-testInitialsFromFullname"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "-testDemoOfStringCompair"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
