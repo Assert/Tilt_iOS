@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreMotion/CoreMotion.h>
 
 @interface TiltViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *assert;
+- (IBAction)Update:(id)sender;
+
+@property (strong, nonatomic) CMMotionManager *motionManager;
+
+
 
 @end
