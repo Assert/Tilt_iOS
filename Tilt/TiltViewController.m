@@ -57,16 +57,21 @@
 
 -(void)outputAccelertionData:(CMAcceleration)acceleration
 {
-    self.assert.text = [@(acceleration.x) stringValue];
-    self.assert.text = [@(acceleration.y) stringValue];
-    self.assert.text = [@(acceleration.z) stringValue];
+    
+    id calc = [[TiltCalc alloc] init];
+    float deg = [calc calcDeg:acceleration.x];
+    self.assert.text = [@(deg) stringValue];
+    
+    self.accX.text = [@(acceleration.x) stringValue];
+    self.accY.text = [@(acceleration.y) stringValue];
+    self.accZ.text = [@(acceleration.z) stringValue];
 }
 
 -(void)outputRotationData:(CMRotationRate)rotation
 {
-    self.assert.text = [@(rotation.x) stringValue];
-    self.assert.text = [@(rotation.y) stringValue];
-    self.assert.text = [@(rotation.z) stringValue];
+    self.rotX.text = [@(rotation.x) stringValue];
+    self.rotY.text = [@(rotation.y) stringValue];
+    self.rotZ.text = [@(rotation.z) stringValue];
 }
 
 @end

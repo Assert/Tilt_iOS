@@ -10,7 +10,16 @@
 #import <CoreMotion/CoreMotion.h>
 
 @interface TiltViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UILabel *assert;
+@property (weak, nonatomic) IBOutlet UILabel *accX;
+@property (weak, nonatomic) IBOutlet UILabel *accY;
+@property (weak, nonatomic) IBOutlet UILabel *accZ;
+
+@property (weak, nonatomic) IBOutlet UILabel *rotX;
+@property (weak, nonatomic) IBOutlet UILabel *rotY;
+@property (weak, nonatomic) IBOutlet UILabel *rotZ;
+
 - (IBAction)Update:(id)sender;
 
 @property (strong, nonatomic) CMMotionManager *motionManager;
